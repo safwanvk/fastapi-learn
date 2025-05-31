@@ -1,0 +1,2 @@
+# FastAPI Learning Repository
+This repository is designed for learning FastAPI through various branches, each focusing on different concepts and features of the framework. Below is a brief overview of the branches available in this repository:
