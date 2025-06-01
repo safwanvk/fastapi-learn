@@ -11,7 +11,7 @@ services:
     environment:
       - MONGODB_URL=mongodb://mongo:27017
     volumes:
-      - ./app:/app/app
+      - ./app:/app
 
   mongo:
     image: mongo:6
