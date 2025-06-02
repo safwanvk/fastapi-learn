@@ -7,19 +7,28 @@ services:
     ports:
       - "8000:8000"
     depends_on:
-      - mongo
+      - postgres
     environment:
-      - MONGODB_URL=mongodb://mongo:27017
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=fastapidb
+      - POSTGRES_USER=fastapiuser
+      - POSTGRES_PASSWORD=fastapipassword
     volumes:
       - ./app:/app
 
-  mongo:
-    image: mongo:6
-    container_name: mongodb
+  postgres:
+    image: postgres:16
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: fastapidb
+      POSTGRES_USER: fastapiuser
+      POSTGRES_PASSWORD: fastapipassword
     ports:
-      - "27017:27017"
+      - "5432:5432"
     volumes:
-      - mongo_data:/data/db
+      - postgres_data:/var/lib/postgresql/data
 
 volumes:
-  mongo_data:
+  postgres_data:

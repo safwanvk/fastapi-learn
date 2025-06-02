@@ -1,5 +1,5 @@
 fastapi
+sqlalchemy
 uvicorn
-pymongo
-dnspython
 pydantic
+psycopg2-binary
