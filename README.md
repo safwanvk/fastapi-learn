@@ -7,3 +7,4 @@ This repository is designed for learning FastAPI through various branches, each 
 - **mongodb**: Demonstrates FastAPI integration with MongoDB, including Docker support and basic CRUD operations.
 - **restful-apis**: Focuses on building RESTful APIs with FastAPI, showcasing routing, request/response models, and error handling.
 - **sqlite**: Shows how to use FastAPI with SQLite for lightweight database operations.
+- **postgresql**: Illustrates FastAPI integration with PostgreSQL, including database migrations and advanced query handling.
